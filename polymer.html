@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polymer Technology</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #f0f4f8);
+      color: #1a202c;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+      margin-top: 1rem;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(255, 77, 77, 0.4); }
+      to { text-shadow: 0 0 20px rgba(255, 77, 77, 0.9); }
+    }
+
+    marquee {
+      margin: 20px 0;
+    }
+
+    marquee img {
+      height: 300px;
+      width: auto;
+      margin: 0 10px;
+      border-radius: 10px;
+      border: 3px solid #ff4d4d;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .content-section {
+      background: linear-gradient(to top, #ffffff, #f3f4f6);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section h1 {
+      color: #1e3a8a;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+      text-align: center;
+    }
+
+    .content-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #2563eb, #3b82f6);
+      transform: scale(1.05);
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .page-title {
+        font-size: 2rem;
+      }
+      marquee img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">🧪 Polymer Technology</h1>
+
+    <marquee behavior="scroll" direction="right" scrollamount="10">
+      <img src="polymer3.jpeg" alt="Lab 1" />
+      <img src="polymer1.jpeg" alt="Lab 2" />
+      <img src="polymer2.jpeg" alt="Lab 3" />
+    </marquee>
+
+    <div class="content-section">
+      <h1>About the Department</h1>
+      <p>
+        Diploma in Polymer Technology is a special and unique course in the Pune Region, derived from Plastic Engineering.
+        It combines the fields of Polymer/Plastic Engineering & Mechanical Engineering to broaden employability opportunities.
+      </p>
+      <p>
+        <strong>Polymer Department</strong><br>
+        Intake for students: <strong>40</strong><br>
+        Departmental Staff: <strong>05</strong><br>
+        Head of Department: <strong>01</strong>
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h1>Objective of the Course</h1>
+      <p>• Polymer Processing (Injection, Blow & Extrusion Moulding)</p>
+      <p>• Polymer Materials & Composites</p>
+      <p>• Injection Mold Design & Plastic Product Design</p>
+      <p>• Testing of Plastics</p>
+    </div>
+
+    <center>
+      <button><a href="index.html">Back</a></button>
+    </center>
+  </div>
+</body>
+</html>

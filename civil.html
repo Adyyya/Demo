@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civil Engineering</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #e0f7fa, #f0f4f8);
+      color: #1a202c;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Centered stylish heading */
+    .page-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #1e3a8a, #3b82f6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+      margin-top: 1rem;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+      }
+      to {
+        text-shadow: 0 0 20px rgba(6, 182, 212, 0.8);
+      }
+    }
+
+    .images-row {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .images-row img {
+      max-width: 45%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .content-section {
+      background: linear-gradient(to top, #ffffff, #f3f4f6);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    .content-section h1 {
+      color: #1e3a8a;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+    }
+    .content-section p, .content-section li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+    .content-section ul, .content-section ol {
+      padding-left: 1.5rem;
+    }
+    button {
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin-top: 2rem;
+    }
+    button:hover {
+      background: linear-gradient(to right, #2563eb, #3b82f6);
+      transform: scale(1.05);
+    }
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .images-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .images-row img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Stylish Centered Heading -->
+    <h1 class="page-title">✨ Civil Engineering ✨</h1>
+
+    <div class="images-row">
+      <img src="civil2.jpeg" alt="Civil Engineering Lab">
+      <img src="civil3.jpeg" alt="Objective of Civil Course">
+    </div>
+
+    <div class="content-section">
+      <h1>About the Department</h1>
+      <p>The Civil Engineering Department was established in 1990 and started functioning under Government Polytechnic when the Institute was established.</p>
+      <p><strong>Intake for Regular:</strong> 60 students</p>
+      <p><strong>Departmental Staff:</strong></p>
+      <ul>
+        <li>Captain Dr. N.P. Sonaje</li>
+        <li>Shri H.T. Tatale</li>
+        <li>Dr. K.R. Kumbhojkar</li>
+        <li>Shri B.B. Ladge</li>
+        <li>Shri A.Y. Mestri</li>
+      </ul>
+      <p><strong>Head Of Department:</strong> Shri H.T. Tatale</p>
+      <p><strong>Laboratories:</strong></p>
+      <ul>
+        <li>Survey Lab</li>
+        <li>CT Lab</li>
+        <li>Hydraulics Lab</li>
+        <li>APM Lab</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h1>Objective of the Course</h1>
+      <p>
+        Civil Engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment.
+        This includes public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.
+      </p>
+    </div>
+
+    <div style="text-align: center;">
+      <button><a href="./index.html">Back</a></button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Engineering</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #e0f7fa, #f0f4f8);
+      color: #1a202c;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .header-image {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .images-row {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .images-row img {
+      height: 160px;
+      width: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .content-section {
+      background: linear-gradient(to top, #ffffff, #f3f4f6);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    .content-section h1 {
+      color: #1e3a8a;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+    }
+    .content-section p, .content-section li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+    .content-section ul, .content-section ol {
+      padding-left: 1.5rem;
+    }
+    button {
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin-top: 2rem;
+    }
+    button:hover {
+      background: linear-gradient(to right, #2563eb, #3b82f6);
+      transform: scale(1.05);
+    }
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="computer5.png" alt="Department Banner" class="header-image">
+
+    <div class="images-row">
+      <img src="computer1.jpeg" alt="Computer Lab">
+      <img src="computer4.jpeg" alt="Vision & Mission">
+    </div>
+
+    <div class="content-section">
+      <h1>About the Department</h1>
+      <p>The Computer Engineering Department was established in 1990 and started functioning under Government Polytechnic when the Institute was established.</p>
+      <p><strong>Intake for Regular:</strong> 60 students</p>
+      <p><strong>Departmental Staff:</strong></p>
+      <ul>
+        <li>Dr. V.R. Falmari</li>
+        <li>Dr. B.P. Mulla</li>
+        <li>Dr. P.V. Toraskar</li>
+      </ul>
+      <p><strong>Head Of Department:</strong> Dr. Vinod Suresh Falmari</p>
+      <p><strong>Laboratories:</strong></p>
+      <ul>
+        <li>Networking Lab</li>
+        <li>Programming Lab</li>
+        <li>Web Designing Lab</li>
+        <li>Software Testing Lab</li>
+        <li>Hardware Lab</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h1>Vision and Mission</h1>
+      <p><strong>Vision:</strong> To produce competent computer engineering technicians of high moral values and ethics to serve the community and the continuously changing global industrial needs.</p>
+      <p><strong>Mission:</strong></p>
+      <ol>
+        <li>To empower the students with the required skills to solve the broad based problems of modern society.</li>
+        <li>To impart training with an emphasis on promoting collaborative and multidisciplinary activities.</li>
+        <li>To develop adaptability for working in teams and as individuals in competitive environments with effective communication.</li>
+        <li>To inculcate the ability for environment-friendly solutions using ethical engineering practices.</li>
+      </ol>
+    </div>
+
+    <center>
+      <button><a href="file:///D:/PROJECTS%20IN%20DIPLOMA/HTML%20MICROPROJECT/index.html">Back</a></button>
+    </center>
+  </div>
+</body>
+</html>

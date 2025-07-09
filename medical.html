@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Electronics</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #f0f4f8);
+      color: #1a202c;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+      margin-top: 1rem;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px rgba(0, 140, 255, 0.5); }
+      to { text-shadow: 0 0 20px rgba(0, 140, 255, 0.8); }
+    }
+
+    .images-row {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .images-row img {
+      max-width: 45%;
+      height: auto;
+      border-radius: 10px;
+      border: 4px solid #ff4d4d;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .content-section {
+      background: linear-gradient(to top, #ffffff, #f3f4f6);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-section h1 {
+      color: #1e3a8a;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #3b82f6;
+      padding-left: 1rem;
+    }
+
+    .content-section p, .content-section li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .custom-table th, .custom-table td {
+      border: 1px solid #3b82f6;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .custom-table th {
+      background-color: #eff6ff;
+      color: #1e3a8a;
+    }
+
+    .custom-table caption {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    button {
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #2563eb, #3b82f6);
+      transform: scale(1.05);
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .images-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .images-row img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">💊 Medical Electronics 💉</h1>
+
+    <div class="images-row">
+      <img src="medical1.jpeg" alt="Medical Electronics Lab 1">
+      <img src="medical2.jpeg" alt="Medical Electronics Lab 2">
+    </div>
+
+    <div class="content-section">
+      <h1>About the Department</h1>
+      <p>The Medical Electronics Department was established in 1990 and started functioning under Government Polytechnic when the Institute was established.</p>
+      
+      <table class="custom-table">
+        <caption>Medical Electronics Department Details</caption>
+        <tr>
+          <th colspan="2">Information</th>
+        </tr>
+        <tr>
+          <td>Intake for Regular</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Department Staff</td>
+          <td>
+            1) Dr. B.V. Yadav<br>
+            2) Dr. R.M. Ohol<br>
+            3) Smt. M.S. Nitalikar<br>
+            4) Smt. S.S. Rathi<br>
+            5) Smt. S.S. Patil
+          </td>
+        </tr>
+        <tr>
+          <td>Head of Department</td>
+          <td>Dr. B.V. Yadav</td>
+        </tr>
+        <tr>
+          <td>Laboratories</td>
+          <td>
+            1) EWP Lab<br>
+            2) ICT Lab<br>
+            3) EMC Lab<br>
+            4) Machine Lab
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="content-section">
+      <h1>Objective of the Course</h1>
+      <p>1. To educate and train students to solve broad-based problems in medical electronics by adapting professional skills and ethics.</p>
+      <p>2. To develop intellectual competency amongst medical electronics students so as to engage them with healthcare industry.</p>
+      <p>3. To apply technical skills to solve problems individually or as a team member to face challenges in healthcare industry.</p>
+    </div>
+
+    <div style="text-align: center;">
+      <button><a href="index.html">Back</a></button>
+    </div>
+  </div>
+</body>
+</html>

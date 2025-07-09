@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Government Polytechnic Miraj</title>
+
+  <!-- ✅ Font Awesome link (only once) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #2c3e50, #bdc3c7);
+      color: #fff;
+    }
+
+    header {
+      background: #411a01d6;
+      text-align: center;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #411a01b5;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid white;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #fff;
+      color: #00bcd4;
+      font-weight: bold;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url("gpmiraj.jpeg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+
+    .hero h2 {
+      position: relative;
+      font-size: 3.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem 3rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.3);
+      text-shadow: 2px 2px 10px #000;
+      color: white;
+      z-index: 2;
+    }
+
+    section {
+      padding: 4rem 10%;
+      background: #411a0172;
+      color: #ffffff;
+    }
+
+    h1.section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    h1.section-title::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background: #1abc9c;
+      display: block;
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #411a01b5;
+      padding: 1.5rem;
+      border-radius: 15px;-
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+      color: white;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #2980b9;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #1abc9c;
+      font-weight: bold;
+    }
+
+    .polymer-card {
+      grid-column: 1 / -1;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    ol {
+      padding-left: 2rem;
+    }
+
+    .feedback-button {
+      display: inline-block;
+      background-color: #1abc9c;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      transition: background 0.3s, transform 0.3s;
+      margin-top: 10px;
+      position: relative;
+      left: 500px;
+    }
+
+    .feedback-button:hover {
+      background-color: #16a085;
+      transform: scale(1.05);
+    }
+
+    footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 30px;
+  border-top: 2px solid #1abc9c;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #1abc9c;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+
+  
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- <img src="logo_2-removebg-preview.png"> -->
+    <h1>GOVERNMENT POLYTECHNIC MIRAJ</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#facility">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to GP Miraj</h2>
+  </section>
+
+  <section id="about">
+    <h1 class="section-title">About G P Miraj</h1>
+    <p>Government Polytechnic, Miraj is a premier institution of technical education and research in Maharashtra. Established in 1990, it provides quality education in Civil, Computer, Mechanical, Medical Electronics, and Polymer Technology.</p>
+    <p>All the programmes are recognised by AICTE, New Delhi and affiliated to MSBTE, Mumbai.</p>
+    <p>The institute is situated near MIDC area which strengthens the Industry-Institute relationship. Institute is committed to developing technologically competent industry-ready technicians having high values and national concern. The institute has won the General Championship Trophy for its overall performance in DIPEX-2018.</p>
+  </section>
+
+  <section id="courses">
+    <h1 class="section-title">Courses Offered</h1>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="computer.html">Computer Engineering</a></h3>
+        <p>Intake: 60<br>HOD: Dr. V.R. Falmari</p>
+      </div>
+      <div class="card">
+        <h3><a href="civil.html">Civil Engineering</a></h3>
+        <p>Intake: 60<br>HOD: Shri H.T. Tatale</p>
+      </div>
+      <div class="card">
+        <h3><a href="mechanical.html">Mechanical Engineering</a></h3>
+        <p>Intake: 60<br>HOD: Dr. D.S. Chavan</p>
+      </div>
+      <div class="card">
+        <h3><a href="medical.html">Medical Electronics</a></h3>
+        <p>Intake: 30<br>HOD: Dr. B.V. Yadav</p>
+      </div>
+      <div class="card polymer-card">
+        <h3><a href="polymer.html">Polymer Technology</a></h3>
+        <p>Intake: 30<br>HOD: Dr. B.V. Yadav</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="facility">
+    <h1 class="section-title">Facilities</h1>
+    <ol>
+      <li>Library with 20000+ books</li>
+      <li>Advanced laboratories in each department</li>
+      <li>Spacious classrooms & workshops</li>
+      <li>Boys and Girls Hostels</li>
+      <li>Gymnasium & Sports Ground</li>
+      <li>Canteen and Stationery Store</li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <h1 class="section-title">Contact Us</h1>
+    <p><strong>Address:</strong> Near Maji Sainik Vasahat, Vidyanagar, Miraj-416410, Sangli</p>
+    <p><strong>Phone:</strong> 0233-2231423</p>
+    <p><strong>Email:</strong> 
+      <a href="mailto:gpmiraj@gmail.com" style="text-decoration: none; color: #ffffff;">
+        gpmiraj@gmail.com
+      </a>
+    </p>
+    <a href="feedback.html" class="feedback-button">Send Feedback</a>
+  </section>
+
+  <footer>
+  <p class="footer-text">&copy; 2025 Government Polytechnic Miraj</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/atharv_mahi_7" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@governmentpolytechnicmiraj6465" target="_blank">YouTube</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+  </div>
+</footer>
+
+</body>
+</html>

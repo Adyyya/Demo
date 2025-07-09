@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f0f2f5, #c9d6ff);
+      padding: 2rem;
+      color: #333;
+    }
+
+    .login {
+      max-width: 600px;
+      margin: auto;
+      background: url("gpmiraj.jpeg") center/cover no-repeat;
+      border-radius: 15px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    form {
+      backdrop-filter: brightness(40%);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+      outline: none;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    button {
+      background: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 0.75rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #16a085;
+    }
+
+    .back-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+
+    .back-button a {
+      text-decoration: none;
+      color: white;
+      background: #2980b9;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .back-button a:hover {
+      background: #3498db;
+    }
+    input::placeholder {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="login">
+    <form>
+      <h1>Feedback Form</h1>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter Your Full Name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter Your Email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter Phone Number" required />
+
+      <label for="feedback">Feedback</label>
+      <textarea id="feedback" rows="5" placeholder="Please give your suggestions here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="back-button">
+    <a href="index.html">Back</a>
+  </div>
+</body>
+</html>
